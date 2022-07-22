@@ -10,11 +10,11 @@ function src.Identidade()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		local identity = vRP.getUserIdentity(user_id)
-		if identity then		
-			return 
-			identity.name,
-			identity.firstname
-	    end
-	end
+	local identity = vRP.getUserIdentity(user_id)
+	if identity then		
+	return 
+	identity.name,
+	identity.firstname
+      end
+   end
 end
